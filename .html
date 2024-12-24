@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".css"> 
+    <script src=".js" defer></script> 
+    <title>Веб-калькулятор</title>
+</head>
+<body>
+    <!-- Анимированные цифры на заднем фоне -->
+    <div class="background-numbers">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+        <div class="number">6</div>
+        <div class="number">7</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+        <div class="number">0</div>
+    </div>
+
+    <!-- Калькулятор -->
+    <div class="calculator">
+        <input type="text" id="input" class="input" readonly> <!-- Экран калькулятора -->
+        <div class="buttons">
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button operator" onclick="chooseOperation('*')">×</button>
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button operator" onclick="chooseOperation('/')">÷</button>
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+            <button class="button" onclick="appendNumber(3)">3</button>
+            <button class="button operator" onclick="chooseOperation('-')">−</button>
+            <button class="button" onclick="clearInput()">C</button>
+            <button class="button" onclick="appendNumber(0)">0</button>
+            <button class="button operator" onclick="chooseOperation('+')">+</button>
+            <button class="button equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+</body>
+</html>
